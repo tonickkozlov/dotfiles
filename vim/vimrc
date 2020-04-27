@@ -17,6 +17,11 @@ call plug#end()
 " Sets how many lines of history VIM has to remember
 set history=500
 
+" forces Vim to source .vimrc file if it present in working directory
+set exrc
+" this option will restrict usage of some commands in non-default .vimrc files
+set secure
+
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
