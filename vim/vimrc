@@ -62,6 +62,10 @@ set hid
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
+" Use jk or kj to exit insert mode
+inoremap jk <Esc>
+inoremap kj <Esc>
+
 " Ignore case when searching
 set ignorecase
 
