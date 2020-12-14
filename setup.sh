@@ -2,6 +2,7 @@
 DOTFILES_DIR="$HOME/dotfiles"
 
 # tmux
+touch ~/.tmux.conf.local
 echo source-file "$DOTFILES_DIR/tmux/tmux.conf" > ~/.tmux.conf
 # vim
 echo source "$DOTFILES_DIR/vim/vimrc" > ~/.vimrc
