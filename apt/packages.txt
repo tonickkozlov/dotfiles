@@ -3,3 +3,4 @@ vim
 tmux
 curl
 git
+ripgrep
