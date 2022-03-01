@@ -1,6 +1,11 @@
 #!/bin/bash
 DOTFILES_DIR="$HOME/dotfiles"
 
+# apt (Linux only)
+if [[ $(uname) == 'Linux'* ]]; then
+  xargs sudo apt-get install -y <apt/packages.txt
+fi
+
 # tmux
 touch ~/.tmux.conf.local
 echo source-file "$DOTFILES_DIR/tmux/tmux.conf" > ~/.tmux.conf
