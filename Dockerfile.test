@@ -1,0 +1,10 @@
+# docker build -f Dockerfile.test -t dotfiles_test .
+FROM ubuntu:20.04
+RUN apt-get update && apt-get upgrade -y && apt-get install --no-install-recommends -y sudo vim
+
+RUN adduser --disabled-password --gecos '' ubuntu
+RUN adduser ubuntu sudo
+RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+
+WORKDIR /home/ubuntu
+USER ubuntu
