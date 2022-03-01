@@ -4,6 +4,10 @@ DOTFILES_DIR="$HOME/dotfiles"
 # apt (Linux only)
 if [[ $(uname) == 'Linux'* ]]; then
   xargs sudo apt-get install -qq -y < $(dirname -- "${BASH_SOURCE[0]}")/apt/packages.txt
+# on a Mac, install Homebrew
+elif [[ $(uname) == 'Darwin'* ]]; then
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  xargs brew install < $(dirname -- "${BASH_SOURCE[0]}")/brew/packages.txt
 fi
 
 # tmux
