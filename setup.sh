@@ -1,6 +1,8 @@
 #!/bin/bash
 DOTFILES_DIR="$HOME/dotfiles"
 
+mkdir -p $HOME/bin
+
 # apt (Linux only)
 if [[ $(uname) == 'Linux'* ]]; then
   xargs sudo apt-get install -qq -y < $(dirname -- "${BASH_SOURCE[0]}")/apt/packages.txt
