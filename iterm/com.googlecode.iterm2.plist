@@ -3072,12 +3072,16 @@
 			</dict>
 			<key>Selection Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.12343787401914597</real>
+				<real>0.11568380249718757</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.12343578040599823</real>
+				<real>0.49923095209581925</real>
 				<key>Red Component</key>
-				<real>0.1234394758939743</real>
+				<real>0.84887409210205078</real>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
@@ -3169,7 +3173,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewPreferredModeKey</key>
-	<integer>0</integer>
+	<integer>6</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
 	<false/>
 </dict>
