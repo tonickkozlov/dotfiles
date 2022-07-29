@@ -1,2 +1,6 @@
 [branch]
 	sort = committerdate
+
+[alias]
+  sl = log --pretty=\"tformat:%C(auto)%h %as%d [%ae]: %s\"
+  csvlog = log --first-parent --pretty='tformat:%h,\"%as\",\"%ae\",\"%s\"'
