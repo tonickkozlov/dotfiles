@@ -13,6 +13,9 @@ Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
+" Disable airline plug-ins for performance
+let g:airline_extensions = []
+
 """ Config - from https://github.com/amix/vimrc
 "" General
 " Sets how many lines of history VIM has to remember
