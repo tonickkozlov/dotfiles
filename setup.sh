@@ -1,7 +1,6 @@
 #!/bin/bash
 set -eou pipefail
 
-exit 0
 DOTFILES_DIR="$HOME/dotfiles"
 
 mkdir -p $HOME/bin
